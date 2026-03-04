@@ -1,0 +1,81 @@
+section .card-period-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  min-width: 21.875rem;
+  background-color: var(--background-tertiary);
+  border-radius: 0.625rem;
+
+  & span {
+    color: var(--content-secondary);
+    font: var(--label-lg);
+  }
+}
+
+section .card-period-group:nth-child(1) {
+  margin-top: 2rem;
+}
+.card-header {
+  padding-inline: 1.25rem;
+  padding-block: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+  }
+}
+
+.period-title {
+  color: var(--content-primary);
+  font: var(--label-lg);
+}
+
+.card-info {
+  padding-inline: 1.25rem;
+  border-top: 1px solid #2e2c30;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+
+  & .card-info-row {
+    padding-top: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+
+    & strong {
+      color: var(--content-primary);
+      font: var(--label-md);
+    }
+
+    & p {
+      color: var(--content-secondary);
+      font: var(--p-md);
+    }
+  }
+  p {
+    color: var(--content-secondary);
+    font: var(--p-md);
+  }
+
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--content-tertiary);
+    font: var(--p-sm);
+    width: 8.25rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+@media (width >= 48rem) {
+  .schedule {
+    width: 100%;
+    max-width: 710px;
+  }
+}

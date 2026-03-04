@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Pet</title>
+    <link
+      rel="shortcut icon"
+      href="assets/dog-duotone.svg"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="icon" href="dog-duotone.svg"><script defer src="main.js"></script></head>
+  <body>
+    <div class="logo">
+      <img src="assets/dog-duotone.svg" alt="" />
+      <span>MUNDO PET</span>
+    </div>
+
+    <main class="container">
+      <header>
+        <div class="content">
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+        </div>
+
+        <label for="date" class="label">Data</label>
+        <div class="input">
+          <i><img src="assets/Calendar.svg" alt="Calendário" /></i>
+          <input type="date" id="date" name="date" required />
+          <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
+        </div>
+      </header>
+
+      <section class="schedule">
+        <div class="card-period-group">
+          <div class="card-header">
+            <h2 class="period-title">
+              <img src="assets/Sun.svg" alt="" />
+              Manhã
+            </h2>
+            <span>09h-12h</span>
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-row">
+              <strong>09:00 </strong>
+              <p><strong>Thor</strong>/ Fernanda Costa</p>
+            </div>
+            <p>Vacinação</p>
+            <button type="button" class="btn-remove">
+              Remover agendamento
+            </button>
+          </div>
+        </div>
+
+        <div class="card-period-group">
+          <div class="card-header">
+            <h2 class="period-title">
+              <img src="assets/Cloud-Sun.svg" alt="" />
+              Tarde
+            </h2>
+            <span>13h-18h</span>
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-row">
+              <strong>15:00 </strong>
+              <p><strong>Mel</strong>/ Fernando Reis</p>
+            </div>
+            <p>Cadastração</p>
+            <button type="button" class="btn-remove">
+              Remover agendamento
+            </button>
+          </div>
+        </div>
+
+        <div class="card-period-group">
+          <div class="card-header">
+            <h2 class="period-title">
+              <img src="assets/Moon-Stars.svg" alt="" />
+              Noite
+            </h2>
+            <span>19h-21h</span>
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-row">
+              <strong>20:00 </strong>
+              <p><strong>Juca</strong>/ Michelli</p>
+            </div>
+            <p>Vacinação</p>
+            <button type="button" class="btn-remove">
+              Remover agendamento
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

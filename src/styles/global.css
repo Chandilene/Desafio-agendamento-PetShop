@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9282fa;
+  --background-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  --ff-tight: "Inter Tight", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+  --ff-logo: "Familjen Grotesk", sans-serif;
+
+  --logo: 700 16px/1.5rem var(--ff-logo);
+
+  --title: 700 1.5rem/2rem var(--ff-tight);
+  --p-md: 500 0.875rem/1.5rem var(--ff-inter);
+  --p-sm: 500 0.75rem/1rem var(--ff-inter);
+  --label-lg: 700 1rem/1.5rem var(--ff-inter);
+  --label-md: 700 0.875rem/1.5rem var(--ff-inter);
+  --label-sm: 700 0.75rem/1rem var(--ff-inter);
+  --link: 500 0.75rem/1rem var(--ff-inter);
+}
+body {
+  background-color: var(--background-secondary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+
+  background-color: #2e2c30;
+  padding: 0.75rem 1.25rem;
+  border-bottom-right-radius: 0.75rem;
+
+  font: var(--logo);
+  color: #9282fa;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  height: 3rem;
+  width: 9.5625rem;
+}
+
+/* @media (width >= 48rem) {
+  .container {
+    flex-direction: row;
+  }
+} */
