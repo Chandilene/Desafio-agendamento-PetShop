@@ -14,7 +14,7 @@ header p {
   color: var(--content-secondary);
 }
 
-label {
+header label {
   display: none;
 }
 

@@ -107,7 +107,93 @@
       </section>
     </main>
     <footer>
-      <button class="new-schedule">Novo agendamento</button>
+      <button type="button" class="new-schedule">Novo agendamento</button>
     </footer>
+
+    <div class="modal-scheduling-overlay" id="modal-scheduling">
+      <div class="modal-scheduling">
+        <button type="button" class="btn-close" id="close-modal">
+          <img src="assets/Close.svg" alt="botão de fechar modal" />
+        </button>
+        <header>
+          <div class="modal-title">
+            <h2>Agende um atendimento</h2>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+          </div>
+        </header>
+
+        <form>
+          <div class="input-group">
+            <label for="tutor">Nome do tutor</label>
+            <div class="input-wrapper">
+              <img src="assets/User.svg" alt="" />
+              <input
+                type="text"
+                id="tutor"
+                placeholder="Helena Souza"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="pet">Nome do pet</label>
+            <div class="input-wrapper">
+              <img src="assets/Pet-Paw.svg" alt="" />
+              <input type="text" id="pet" placeholder="Cheddar" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Telefone</label>
+            <div class="input-wrapper">
+              <img src="assets/Phone.svg" alt="" />
+              <input
+                type="tel"
+                id="phone"
+                placeholder="(00) 0 0000-0000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="service">Descrição do serviço</label>
+
+            <textarea
+              rows="3"
+              name="service"
+              id="service"
+              placeholder="Banho e tosa"
+              required
+            ></textarea>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label for="modal-date">Data</label>
+              <div class="input-wrapper">
+                <img src="assets/Calendar.svg" alt="" />
+                <input type="date" id="modal-date" name="modal-date" required />
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="time">Hora</label>
+              <div class="input-wrapper">
+                <img src="assets/Clock.svg" alt="" />
+                <input type="time" id="time" name="time" required />
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit" id="btn-schedule">
+            AGENDAR
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
