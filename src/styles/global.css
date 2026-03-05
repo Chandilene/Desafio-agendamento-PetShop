@@ -73,8 +73,41 @@ body {
   width: 9.5625rem;
 }
 
-/* @media (width >= 48rem) {
-  .container {
-    flex-direction: row;
+footer {
+  background-color: #23242c;
+  height: 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .new-schedule {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 13.625rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--content-brand);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #050505;
+    font: var(--label-md);
+    box-shadow: 0px 1px 40px 4px rgba(146, 130, 250, 0.3);
+
+    &:hover {
+      background-color: #bdb4fa;
+    }
   }
-} */
+}
+
+@media (width >= 48rem) {
+  footer {
+    background-color: transparent;
+    justify-content: right;
+
+    & .new-schedule {
+      width: 18.75rem;
+      font: var(--label-lg);
+    }
+  }
+}
