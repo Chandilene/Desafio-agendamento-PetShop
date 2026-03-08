@@ -53,12 +53,7 @@ form.onsubmit = async (e) => {
 
     await scheduleNew(schedule);
 
-    guardian_pet.value = "";
-    pet_name.value = "";
-    guardian_phone.value = "";
-    service.value = "";
-    service_date.value = "";
-    hourSelected.value = "";
+    form.reset();
   } catch (error) {
     alert("Não foi possivel fazer o agendamento!");
     console.log(error);
