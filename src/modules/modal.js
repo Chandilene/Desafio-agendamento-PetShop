@@ -7,8 +7,11 @@ console.log(btnOpenModal);
 btnOpenModal.addEventListener("click", (e) => {
   e.preventDefault();
   modal.classList.add("modal-open");
+  document.body.style.overflow = "hidden";
 });
 
 btnCloseModal.addEventListener("click", () => {
+  console.log("FECHAAAR");
   modal.classList.remove("modal-open");
+  document.body.style.overflow = "initial";
 });

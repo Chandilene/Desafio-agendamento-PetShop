@@ -113,7 +113,7 @@
     <div class="modal-scheduling-overlay" id="modal-scheduling">
       <div class="modal-scheduling">
         <button type="button" class="btn-close" id="close-modal">
-          <img src="src/assets/Close-silver.svg" alt="botão de fechar modal" />
+          <img src="assets/Close.svg" alt="botão de fechar modal" />
         </button>
         <header>
           <div class="modal-title">
@@ -124,12 +124,12 @@
 
         <form>
           <div class="input-group">
-            <label for="tutor">Nome do tutor</label>
+            <label for="guardian">Nome do tutor</label>
             <div class="input-wrapper">
-              <img src="src/assets/User.svg" alt="" />
+              <img src="assets/User.svg" alt="" />
               <input
                 type="text"
-                id="tutor"
+                id="guardian"
                 placeholder="Helena Souza"
                 required
               />
@@ -139,7 +139,7 @@
           <div class="input-group">
             <label for="pet">Nome do pet</label>
             <div class="input-wrapper">
-              <img src="src/assets/Pet-Paw.svg" alt="" />
+              <img src="assets/Pet-Paw.svg" alt="" />
               <input type="text" id="pet" placeholder="Cheddar" required />
             </div>
           </div>
@@ -147,7 +147,7 @@
           <div class="input-group">
             <label for="phone">Telefone</label>
             <div class="input-wrapper">
-              <img src="src/assets/Phone.svg" alt="" />
+              <img src="assets/Phone.svg" alt="" />
               <input
                 type="tel"
                 id="phone"
@@ -161,6 +161,7 @@
             <label for="service">Descrição do serviço</label>
 
             <textarea
+              rows="3"
               name="service"
               id="service"
               placeholder="Banho e tosa"
@@ -172,21 +173,50 @@
             <div class="input-group">
               <label for="modal-date">Data</label>
               <div class="input-wrapper">
-                <img src="src/assets/Calendar.svg" alt="" />
-                <input type="date" id="modal-date" required />
+                <img src="assets/Calendar.svg" alt="" />
+                <input type="date" id="modal-date" name="modal-date" required />
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
               </div>
             </div>
+
+            <!-- <div class="input-group">
+              <label for="time">Hora</label>
+              <div class="input-wrapper">
+                <img src="assets/Clock.svg" alt="" />
+                <input type="time" id="time" name="time" required />
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
+              </div>
+            </div> -->
 
             <div class="input-group">
               <label for="time">Hora</label>
               <div class="input-wrapper">
-                <img src="src/assets/Clock.svg" alt="" />
-                <input type="time" id="time" required />
+                <img src="assets/Clock.svg" alt="" />
+                <select name="time" id="time" required>
+                  <option value="">--|--</option>
+                  <option value="8">8:00h</option>
+                  <option value="9">9:00h</option>
+                  <option value="10">10:00h</option>
+                  <option value="11">11:00h</option>
+                  <option value="12">12:00h</option>
+                  <option value="13">13:00h</option>
+                  <option value="14">14:00h</option>
+                  <option value="15">15:00h</option>
+                  <option value="16">16:00h</option>
+                  <option value="17">17:00h</option>
+                  <option value="18">18:00h</option>
+                  <option value="19">19:00h</option>
+                  <option value="20">20:00h</option>
+                </select>
+
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
               </div>
             </div>
           </div>
 
-          <button type="submit" class="btn-submit">AGENDAR</button>
+          <button type="submit" class="btn-submit" id="btn-schedule">
+            AGENDAR
+          </button>
         </form>
       </div>
     </div>
