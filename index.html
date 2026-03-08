@@ -124,12 +124,12 @@
 
         <form>
           <div class="input-group">
-            <label for="tutor">Nome do tutor</label>
+            <label for="guardian">Nome do tutor</label>
             <div class="input-wrapper">
               <img src="assets/User.svg" alt="" />
               <input
                 type="text"
-                id="tutor"
+                id="guardian"
                 placeholder="Helena Souza"
                 required
               />
@@ -151,7 +151,14 @@
               <input
                 type="tel"
                 id="phone"
-                placeholder="(00) 0 0000-0000"
+                placeholder="Ex: 11999998888"
+                inputmode="numeric"
+                pattern="\d{11}"
+                maxlength="11"
+                minlength="11"
+                onkeypress="
+                  return event.charCode >= 48 && event.charCode <= 57;
+                "
                 required
               />
             </div>
@@ -179,11 +186,36 @@
               </div>
             </div>
 
-            <div class="input-group">
+            <!-- <div class="input-group">
               <label for="time">Hora</label>
               <div class="input-wrapper">
                 <img src="assets/Clock.svg" alt="" />
                 <input type="time" id="time" name="time" required />
+                <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
+              </div>
+            </div> -->
+
+            <div class="input-group">
+              <label for="time">Hora</label>
+              <div class="input-wrapper">
+                <img src="assets/Clock.svg" alt="" />
+                <select name="time" id="time" required>
+                  <option value="">--|--</option>
+                  <option value="8:00">8:00h</option>
+                  <option value="9:00">9:00h</option>
+                  <option value="10:00">10:00h</option>
+                  <option value="11:00">11:00h</option>
+                  <option value="12:00">12:00h</option>
+                  <option value="13:00">13:00h</option>
+                  <option value="14:00">14:00h</option>
+                  <option value="15:00">15:00h</option>
+                  <option value="16:00">16:00h</option>
+                  <option value="17:00">17:00h</option>
+                  <option value="18:00">18:00h</option>
+                  <option value="19:00">19:00h</option>
+                  <option value="20:00">20:00h</option>
+                </select>
+
                 <img src="assets/arrow-down.svg" alt="" class="icon-arrow" />
               </div>
             </div>
