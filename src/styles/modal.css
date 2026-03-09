@@ -178,10 +178,17 @@
   border: none;
   display: flex;
   margin-left: auto;
+  cursor: pointer;
 
   &:hover {
     background-color: #bdb4fa;
   }
+}
+
+.option-disabled {
+  color: #666;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
 }
 
 @media (width >=48em) {

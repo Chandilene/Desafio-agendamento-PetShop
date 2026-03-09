@@ -1,6 +1,10 @@
 import dayjs from "dayjs";
 import { v4 as uuidv4 } from "uuid";
+
 import { scheduleNew } from "../../services/schedule-new.js";
+import { updateAvailableHours } from "./load-hour.js";
+import { schedulesDay } from "../schedules/load-schedules.js";
+import { closeModal } from "../modal.js";
 
 const form = document.querySelector("form");
 const guardian_pet = document.querySelector("#guardian");
@@ -13,6 +17,12 @@ const today = dayjs(new Date()).format("YYYY-MM-DD");
 
 service_date.value = today;
 service_date.min = today;
+
+updateAvailableHours(service_date.value);
+
+service_date.onchange = () => {
+  updateAvailableHours(service_date.value);
+};
 
 form.onsubmit = async (e) => {
   e.preventDefault();
@@ -34,6 +44,7 @@ form.onsubmit = async (e) => {
     const hourNumber = Number(hour);
 
     const when = dayjs(service_date.value).add(hourNumber, "hour");
+    console.log(when);
 
     const selectedDate = dayjs(service_date.value).startOf("day");
     const dayNow = dayjs().startOf("day");
@@ -54,6 +65,13 @@ form.onsubmit = async (e) => {
     await scheduleNew(schedule);
 
     form.reset();
+
+    // service_date.value = today;
+    // updateAvailableHours(today);
+
+    await schedulesDay();
+
+    closeModal();
   } catch (error) {
     alert("Não foi possivel fazer o agendamento!");
     console.log(error);

@@ -2,7 +2,10 @@ const modal = document.getElementById("modal-scheduling");
 const btnCloseModal = document.getElementById("close-modal");
 const btnOpenModal = document.querySelector(".new-schedule");
 
-console.log(btnOpenModal);
+export const closeModal = () => {
+  modal.classList.remove("modal-open");
+  document.body.style.overflow = "initial";
+};
 
 btnOpenModal.addEventListener("click", (e) => {
   e.preventDefault();
@@ -10,8 +13,4 @@ btnOpenModal.addEventListener("click", (e) => {
   document.body.style.overflow = "hidden";
 });
 
-btnCloseModal.addEventListener("click", () => {
-  console.log("FECHAAAR");
-  modal.classList.remove("modal-open");
-  document.body.style.overflow = "initial";
-});
+btnCloseModal.addEventListener("click", closeModal);
