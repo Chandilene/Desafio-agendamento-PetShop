@@ -23,9 +23,6 @@ export async function updateAvailableHours(selectedDateValue) {
     const isScheduledTime = unavailableHours.some((unavailable) =>
       unavailable.includes(optionHour),
     );
-    console.log(unavailableHours);
-    console.log("isscheduleTime", isScheduledTime);
-    console.log("optionHour", optionHour);
 
     if (isToday && optionHourNumber <= currentHour) {
       option.disabled = true;

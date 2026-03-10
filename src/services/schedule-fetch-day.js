@@ -6,13 +6,16 @@ export async function scheduleFetchDay({ date }) {
     const response = await fetch(`${apiConfig.baseURL}/schedules`);
     const data = await response.json();
 
-    const dailySchedules = data.filter((schedule) => {
+    const filterSchedules = data.filter((schedule) => {
       return dayjs(date).isSame(schedule.when, "day");
+    });
+
+    const dailySchedules = filterSchedules.sort((a, b) => {
+      return dayjs(a.when).isAfter(dayjs(b.when)) ? 1 : -1;
     });
 
     return dailySchedules;
   } catch (error) {
-    console.log(error);
     alert("Não foi possivel buscar os agendamentos do dia selecionado");
   }
 }

@@ -1,52 +1,12 @@
 {
   "schedules": [
     {
-      "id": "4f658450-2c2e-43fa-a679-45c2f12bc13d",
-      "guardianName": "Alexandre Roberto",
-      "petName": "Julie",
+      "id": "7130fc43-49ca-46a2-a004-67b5ab7fe621",
+      "guardianName": "Melani",
+      "petName": "diva",
       "phone": "11974322139",
-      "serviceDescription": "vacina",
-      "when": "2026-03-09T16:00:00.000Z"
-    },
-    {
-      "id": "e8a2cf60-ad53-4dde-8258-51f8a4b32af1",
-      "guardianName": "Chandielene",
-      "petName": "Julie",
-      "phone": "11974322139",
-      "serviceDescription": "drfhjdrf",
-      "when": "2026-03-09T21:00:00.000Z"
-    },
-    {
-      "id": "8e233fe8-6477-4c5f-ae9f-0f547c164161",
-      "guardianName": "chandilene alves borges",
-      "petName": "sdg",
-      "phone": "11974322139",
-      "serviceDescription": "aedgf",
-      "when": "2026-03-09T23:00:00.000Z"
-    },
-    {
-      "id": "a493cb8d-d8c4-4638-ad9c-4af73580651e",
-      "guardianName": "teste",
-      "petName": "teste",
-      "phone": "11974322139",
-      "serviceDescription": "teste",
-      "when": "2026-03-10T11:00:00.000Z"
-    },
-    {
-      "id": "dc74c095-2439-4ae3-9b16-0a545584969f",
-      "guardianName": "teste",
-      "petName": "test",
-      "phone": "11974322139",
-      "serviceDescription": "testest",
-      "when": "2026-03-10T23:00:00.000Z"
-    },
-    {
-      "id": "6569e97f-5e24-4cf4-b9c2-035534260e4b",
-      "guardianName": "teste",
-      "petName": "teste",
-      "phone": "11974322139",
-      "serviceDescription": "testes",
-      "when": "2026-03-09T17:00:00.000Z"
+      "serviceDescription": "vacinação",
+      "when": "2026-03-10T15:00:00.000Z"
     }
   ]
 }

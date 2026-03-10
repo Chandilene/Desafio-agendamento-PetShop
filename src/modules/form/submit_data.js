@@ -44,7 +44,6 @@ form.onsubmit = async (e) => {
     const hourNumber = Number(hour);
 
     const when = dayjs(service_date.value).add(hourNumber, "hour");
-    console.log(when);
 
     const selectedDate = dayjs(service_date.value).startOf("day");
     const dayNow = dayjs().startOf("day");
@@ -66,14 +65,10 @@ form.onsubmit = async (e) => {
 
     form.reset();
 
-    // service_date.value = today;
-    // updateAvailableHours(today);
-
     await schedulesDay();
 
     closeModal();
   } catch (error) {
     alert("Não foi possivel fazer o agendamento!");
-    console.log(error);
   }
 };

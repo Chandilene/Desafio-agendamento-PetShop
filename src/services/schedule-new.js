@@ -25,7 +25,6 @@ export async function scheduleNew({
     });
     alert("Agendamento realizado com sucesso!");
   } catch (error) {
-    console.log(error);
     alert("Não foi possivel agendar, tente mais tarde");
   }
 }

@@ -6,8 +6,6 @@ export async function schedulesDay() {
 
   const date = selected_date.value;
 
-  console.log("agendamento do dia: ", date);
-
   const dailySchedules = await scheduleFetchDay({ date });
   schedulesShow({ dailySchedules });
 }

@@ -36,8 +36,6 @@ export function schedulesShow({ dailySchedules }) {
       divContainer.append(div_card, serviceP, removeBtn);
 
       const hour = dayjs(schedule.when).hour();
-      console.log(hour);
-      console.log(schedule.when);
 
       if (hour <= 12) {
         card_morning.appendChild(divContainer);
@@ -49,6 +47,5 @@ export function schedulesShow({ dailySchedules }) {
     });
   } catch (error) {
     alert("Não foi possivel exibir agendamentos");
-    console.log(error);
   }
 }
