@@ -12,5 +12,6 @@ import "./modules/form/submit_data.js";
 import "./modules/form/load-hour.js";
 import "./modules/form/date-change.js";
 import "./modules/schedules/cancel.js";
+import "./modules/form/phone-input.js";
 
 import "./modules/load-page-initial.js";

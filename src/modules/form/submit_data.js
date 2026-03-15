@@ -56,7 +56,7 @@ form.onsubmit = async (e) => {
       id: uuidv4(),
       guardianName: name_guardian,
       petName: pet_name.value.trim(),
-      phone: guardian_phone.value,
+      phone: guardian_phone.value.replace(/\D/g, ""),
       serviceDescription: service.value,
       when: when.toISOString(),
     };
